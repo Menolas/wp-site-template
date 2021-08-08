@@ -1,0 +1,46 @@
+.toggler {
+	width: 22px;
+	height: 14px;
+}
+
+.toggler span {
+	position: relative;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background-color: $black;
+	transition: all 0.3s ease 0s;
+
+	&::before {
+		@include element-style(22px, 2px, $black);
+		top: 6px;
+		left: 0;
+		right: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	&::after {
+		@include element-style(22px, 2px, $black);
+		top: 12px;
+		left: 0;
+		right: 0;
+	}
+}
+
+.toggler--close span {
+	transform: rotate(50deg);
+	left: -3px;
+	top: 7px;
+	width: 17px;
+
+	&::before {
+		transform: rotate(-100deg);
+		top: -8px;
+		left: 7px;
+		width: 17px;
+	}
+
+	&::after {
+		display: none;
+	}
+}

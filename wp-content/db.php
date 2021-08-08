@@ -1,0 +1,1 @@
+D:/OSPanel/domains/wp-site-template/wp-content/plugins/query-monitor/wp-content/db.php

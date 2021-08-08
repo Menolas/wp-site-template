@@ -1,0 +1,22 @@
+.container {
+margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+@media (min-width: 992px) {
+
+	.container {
+	    padding: 0 22px;
+    }
+}
+
+@media (min-width: 1170px) {
+
+	.container {
+		padding: 0 15px;
+		width: 1170px;
+	}
+}

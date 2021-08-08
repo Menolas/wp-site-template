@@ -1,0 +1,46 @@
+.social-menu {
+	margin-top: 25px;
+}
+
+.social-menu__list {
+	display: flex;
+	flex-direction: row;
+}
+
+.social-menu__item {
+	margin-right: 20px;
+}
+
+.social-menu__item a {
+	@include link-style;
+	position: relative;
+	width: 20px;
+	height: 20px;
+
+	&::before {
+		@include element-style(20px, 20px, transparent);
+		left: 0;
+		top: 0;
+		color: $black;
+
+	}
+}
+
+.social-menu__item a {
+	
+	&[href*="facebook.com"]::before {
+		background-image: url("../img/svg/facebook.svg");
+	}
+
+	&[href*="instagram.com"]::before { 
+		background-image: url("../img/svg/instagram.svg");
+	}
+
+	&[href*="linkedin.com"]::before {
+		background-image: url("../img/svg/linkedin.svg");
+	}
+
+	&[href*="pinterest.com"]::before {
+		background-image: url("../img/svg/pinterest.svg");
+	}
+}

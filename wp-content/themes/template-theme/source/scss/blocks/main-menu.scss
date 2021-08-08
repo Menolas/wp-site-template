@@ -1,0 +1,27 @@
+.main-menu {
+	position: fixed;
+	top: 120px;
+	left: -100%;
+	padding: 20px;
+	width: 75%;
+	background-color: $white;
+	transition: all 0.3s ease 0s;
+}
+
+.main-header.admin .main-menu {
+	top: 166px;
+}
+
+.main-menu--shown {
+	left: 0;
+}
+
+.main-menu__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-menu__list a {
+	@include link-style;
+	padding: 10px 0;
+}

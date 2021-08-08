@@ -1,0 +1,12 @@
+*.env
+.idea
+*.pyc
+*.log
+*.csv
+*~
+*.sqlite3
+/tmp/*
+/bin/*
+/node_modules
+!.gitkeep
+

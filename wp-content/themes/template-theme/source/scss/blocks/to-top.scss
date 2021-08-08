@@ -1,0 +1,18 @@
+.to-top {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: $black;
+
+	&::before {
+		@include element-style(16px, 16px, transparent);
+		top: 9px;
+		left: 6px;
+		border: 3px solid $white;
+		border-right: none;
+		border-bottom: none;
+		border-radius: 1px;
+		transform: rotate(45deg);
+	}
+}
